@@ -2,7 +2,7 @@
   My list
 </div>
 
-<h1>List</h1>
+<h1>List <%= current_page?('/lists') %>  <%= current_page?(controller: 'lists', action: 'index') %></h1>
 
 
 <div class="cards">

@@ -1,9 +1,10 @@
 // Specific CSS for your home-page
 .banner {
-  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), asset-url("cinema.jpg");
-  background-size: cover;
-  background-position: center;
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), asset-url("download.png");
+  background-position: unset;
+  background-size: auto;
   padding: 150px 0;
+  height: 100vh;
 }
 
 .banner h1 {
