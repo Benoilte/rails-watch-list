@@ -1,0 +1,6 @@
+<%= simple_form_for(list) do |f| %>
+ <%= f.input :name %>
+ <%= f.submit %>
+<% end %>
+
+<%= link_to '<i class="fa-solid fa-arrow-rotate-left"></i> Back to list'.html_safe, lists_path, class: 'btn btn-primary mt-4' %>
