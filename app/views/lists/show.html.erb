@@ -5,6 +5,8 @@
   <% @bookmarks.each do |bookmark| %>
     <li>
       <%= bookmark.comment %>
+      <%= bookmark.movie.title %>
+      <%= bookmark.list.name %>
       <%= link_to '<i class="fa-regular fa-trash-can"></i>'.html_safe, bookmark_path(bookmark), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
     </li>
   <% end %>
