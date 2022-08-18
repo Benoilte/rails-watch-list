@@ -1,6 +1,15 @@
 <h1>Lists#show</h1>
 <p>Find me in app/views/lists/show.html.erb</p>
 
+<ul class="list-unstyled">
+  <% @bookmarks.each do |bookmark| %>
+    <li>
+      <%= bookmark.comment %>
+      <%= link_to '<i class="fa-regular fa-trash-can"></i>'.html_safe, bookmark_path(bookmark), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
+    </li>
+  <% end %>
+</ul>
+
 <%= link_to '<i class="fa-solid fa-circle-plus"></i> Add a new movie'.html_safe, new_list_bookmark_path(@list), class: 'btn btn-primary' %>
 
 <%= link_to '<i class="fa-solid fa-arrow-rotate-left"></i> Back to list'.html_safe, lists_path, class: 'btn btn-primary mt-4' %>

@@ -7,6 +7,7 @@ class ListsController < ApplicationController
 
   def show
     # display all film in the list
+    @bookmarks = @list.bookmarks
   end
 
   def new
