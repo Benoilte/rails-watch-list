@@ -48,6 +48,9 @@ gem "sassc-rails"
 #insert faker data
 gem 'faker'
 
+# security gem for secret key
+gem "dotenv-rails", groups: [:development, :test]
+
 gem "autoprefixer-rails"
 gem "font-awesome-sass", "~> 6.1"
 gem "simple_form", github: "heartcombo/simple_form"
