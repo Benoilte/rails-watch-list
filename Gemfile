@@ -45,8 +45,11 @@ gem "bootsnap", require: false
 # Use Sass to process CSS
 gem "sassc-rails"
 
-#insert faker data
+# insert faker data
 gem 'faker'
+
+# gem to give possibilty to a user to upload folder
+gem "cloudinary"
 
 # security gem for secret key
 gem "dotenv-rails", groups: [:development, :test]
