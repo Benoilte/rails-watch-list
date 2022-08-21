@@ -38,6 +38,14 @@
   margin-bottom: 16px;
 }
 
+.bookmarks-count {
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  margin: 0px;
+  font-size: medium;
+}
+
 .card-category {
   background-size: cover;
   background-position: center;
@@ -58,10 +66,28 @@
   height: 45vh;
 }
 
+.card-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-title > p {
+  margin: 0px;
+}
+
+.fa-star {
+  color: rgb(246, 202, 42);
+}
+
 .card-bottom {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.card-bottom > p {
+  margin: 0px;
 }
 
 .cards {
